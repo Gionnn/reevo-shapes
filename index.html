@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Reevo Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/8.0.3/pixi.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+        
+</head>
+<body>
+    <div id="game-container">
+        <div class="stats">
+            <div class="stats__item">Shapes: <span id="shape-count">0</span></div>
+            <div class="stats__item">Area: <span id="total-area">0</span> px²</div>
+        </div>
+        
+        <div id="canvas-wrapper"></div>
+        
+        <div class="controls">
+            <div class="controls__group">
+                <span class="controls__label">Shapes/s: <span id="shapes-per-second">0.5</span></span>
+                <button class="controls__button controls__button--minus" id="decrease-spawn">-</button>
+                <button class="controls__button controls__button--plus" id="increase-spawn">+</button>
+            </div>
+            
+            <div class="controls__group">
+                <span class="controls__label">Gravity: <span id="gravity-value">0.1</span></span>
+                <button class="controls__button controls__button--minus" id="decrease-gravity">-</button>
+                <button class="controls__button controls__button--plus" id="increase-gravity">+</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="instructions">
+        <p>Click inside the canvas to spawn irregular shapes.</p>
+        <p>Click on shapes to remove them.</p>
+    </div>
+</body>
+</html>
