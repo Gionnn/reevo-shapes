@@ -141,7 +141,7 @@ const config = {
   width: 800,
   height: 600,
   gravity: 0.1,
-  shapesPerSecond: 0.5,
+  shapesPerSecond: 1,
   lastSpawnTime: 0,
 };
 
